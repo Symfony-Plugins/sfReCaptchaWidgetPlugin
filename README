@@ -1,0 +1,19 @@
+sfReCaptchaWidgetPlugin for symfony 1.4
+=======================================
+
+(c) 2010 Jethro G. Beekman, symfony-plugins@jbeekman.nl
+
+Enables the use of reCAPTCHA with the ease of a symfony form widget.
+
+Usage
+-----
+
+The use of this plugin is very simple. Just add the following lines to your form:
+
+    $this->widgetSchema['recaptcha']=new sfWidgetFormReCaptcha(array('publickey'=>'YOUR_PUBLIC_KEY'));
+    $this->validatorSchema['recaptcha']=new sfValidatorReCaptcha(array('privatekey'=>'YOUR_PRIVATE_KEY'));
+
+You can get an API key at [reCAPTCHA][reCAPTCHA]. The widget has an extra option 'ssl' (default: true) which specifies whether SSL should be used for the recaptcha widget. Note: no more than one widget per form allowed (Until reCAPTCHA changes their API to accept custom input-tag names)!
+
+  [reCAPTCHA]: http://recaptcha.net/api/getkey?app=sfReCaptchaPlugin1.4
+
