@@ -2,8 +2,8 @@
 
 class sfWidgetFormReCaptcha extends sfWidgetForm
 {
-  const RECAPTCHA_API_SERVER = 'http://api.recaptcha.net';
-  const RECAPTCHA_API_SECURE_SERVER = 'https://api-secure.recaptcha.net';
+  const RECAPTCHA_API_SERVER = 'http://www.google.com/recaptcha/api';
+  const RECAPTCHA_API_SECURE_SERVER = 'https://www.google.com/recaptcha/api';
 
   protected function configure($options = array(), $attributes = array())
   {
